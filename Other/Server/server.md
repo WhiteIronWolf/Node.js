@@ -16,11 +16,17 @@
         color: #4EDFB0;
     }
 </style>
+# Server
+### How to create a server
+```javascript
+const http = require("http");
 
-# Node.js
-## This is the README file
-Nothing here so far 😄
+const server = http.createServer( function(req, res) {
+    res.end("Hello from the server!")
+})
 
-### Node.js Documentation
-https://nodejs.org/en/docs/
-
+server.listen(3000, function(){
+    console.log("The server is running on port 3000");
+    
+});
+```
