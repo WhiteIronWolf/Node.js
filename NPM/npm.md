@@ -16,24 +16,10 @@
         color: #4EDFB0;
     }
 </style>
+
+
 # NPM 
 [Go to : NPM packages](https://www.npmjs.com/)
-
-## Creating a module:
-```javascript
-exports.messages = ["You are great!", "You can accomplish everything!", "Success is in your future"];
-```
-### Importing module
-```javascript
-const messageModule = require('./messages');
-messageModule.messages.forEach( function ( i ) {
-    console.log(i)
-});
-
-// You are great!
-// You can accomplish everything!
-// Success is in your future
-```
 
 ## NPM Commands
 Kommando | Udførsel 
