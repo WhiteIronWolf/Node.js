@@ -39,3 +39,36 @@ const chalk = require('chalk');
  
 console.log(chalk.green('Success!'));
 ```
+
+
+---
+
+
+## postman-request
+``npm i postman-request``
+### Usage [Example]
+``` javascript
+const request = require('postman-request');
+request('http://www.google.com', function (error, response, body) {
+  console.log('error:', error); // Print the error if one occurred
+  console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+  console.log('body:', body); // Print the HTML for the Google homepage.
+});
+```
+
+---
+
+
+## Express
+``npm i express``
+### Usage [Example]
+``` javascript
+const express = require('express')
+const app = express()
+ 
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
+ 
+app.listen(3000)
+```
