@@ -74,7 +74,9 @@ fs.writeFile("./file.txt", "I created some text in a txt file!" ,"utf-8", functi
 ```javascript
 const fs = require("fs");
 
-fs.appendFileSync("note.txt", " Then I used append file to add some more text.");
+fs.appendFile("note.txt", " Then I used append file to add some more text.", function (err) {
+    console.log("File updated!")
+});
 ```
 From the txt file ``[Example]``
 ```
