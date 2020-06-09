@@ -35,8 +35,9 @@ app.get('/', function (req, res) {
 
 app.post("/", function (req, res) {
     const a = req.body.firstNumber;
-    const b = req.body.secondNumber;
+    const b = req.body.secondNumber
     let result = Number(a) + Number(b);
+    console.log(result)
     res.send(`The result is: ${result}`)
 })
 
