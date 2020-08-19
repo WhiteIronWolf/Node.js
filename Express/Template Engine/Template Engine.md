@@ -1,32 +1,19 @@
 # Template Engine
-Den første template engine guide vil være omkring **EJS**.
-# EJS 
-https://github.com/mde/ejs/wiki/Using-EJS-with-Express
-## Basic setup
+A template engine enables you to use static template files in your application. 
+
+At runtime, the template engine replaces variables in a template file with actual values, and transforms the template into an HTML file sent to the client. 
+
+#### `Not to be confused`
+- a template is the same as a template file.
+- because rendering a template results in what the viewer sees on their screen templates are often called views.
+
+JavaScript template languages (Template engines)
+* Handlebars
+* EJS
+* Pug (Formerly Jade)
+
+#### `Update application settings`
+The code explains express what template engine to use.
 ```javascript
-const express = require('express');
-const app = express();
-
 app.set('view engine', 'ejs');
-
-app.get('/', (req, res) => {
-  var message = "Hello World"; 
-  res.render('index', {someMessage: message});
-});
-
-app.listen(4000, function(){
-    console.log('Example app listening on port 4000!')}
-    );
 ```
----
-
-## Opret folder
-Opret en folder ved navn **views** vigtigt at det staves præcis sådan. I den folder skal alle EJS filer oprettes.
-
----
-
-## Eksempel fra basic setup
-Resultatet på index.ejs siden vil være: Hello World and welcome to this site!
-```
-<p> <%= someMessage %> and welcome to this site! </p>
-``` 
