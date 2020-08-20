@@ -60,7 +60,7 @@ const movie = new Movie ({
     review: 8.2,
 });
 
-movie.save();
+movie.save(); // Don't run this twice
 ```
 
 #### `Read`
