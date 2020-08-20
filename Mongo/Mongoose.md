@@ -49,6 +49,8 @@ const Movie = new mongoose.model('Movie', movieSchema);
 ```
 ---
 ## C.R.U.D (create, read, update, delete)
+The docs shows all the model methods to use if needed.
+ 
 https://mongoosejs.com/docs/api/model.html
 
 #### `Create`
