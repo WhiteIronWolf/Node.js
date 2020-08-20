@@ -1,1 +1,0 @@
-https://mongoosejs.com/docs/api/model.html
