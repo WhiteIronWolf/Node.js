@@ -13,7 +13,7 @@ const mongoose = require("mongoose");
 #### `Create or connect to mongo database`
 
 ```javascript
-mongoose.connect('mongodb://localhost:27017/moviecollection', {
+mongoose.connect('mongodb://localhost:27017/moviecollectionDb', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
@@ -28,12 +28,28 @@ const movieSchema = new mongoose.Schema({
     review: Number,
 });
 ```
+#### The permitted SchemaTypes are:
+- String
+- Number
+- Date
+- Buffer
+- Boolean
+- Mixed
+- ObjectId
+- Array
+- Decimal 128
+- Map
+
 #### `Mongoose Model`
+The Model defines what schema we want to work with and what the Model should be named: `mongoose.model(modelName, schema)`
+
+Converting movieSchema into a model:
 ```javascript
 const Movie = new mongoose.model('Movie', movieSchema);
 ```
 ---
 ## C.R.U.D (create, read, update, delete)
+https://mongoosejs.com/docs/api/model.html
 
 #### `Create`
 ```javascript
