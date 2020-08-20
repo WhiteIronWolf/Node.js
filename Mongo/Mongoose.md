@@ -47,7 +47,7 @@ const movie = new Movie ({
 movie.save();
 ```
 
-#### `Read`
+#### `Read`
 ```javascript
 Movie.find(function(err, movies){
     if (err) {
